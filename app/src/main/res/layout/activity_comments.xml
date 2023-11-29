@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+         android:text="Comments View Data"
+         android:textSize="23dp"
+        android:background="#01579B"
+        android:textColor="#F7F8FA"
+        android:paddingStart="107sp"
+        android:padding="8sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="698dp"
+        android:layout_marginTop="55dp"
+        android:background="#9BBAEA"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    <Button
+        android:id="@+id/Btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="680sp"
+        android:text="Next"
+        android:backgroundTint="#0D47A1"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+</RelativeLayout>

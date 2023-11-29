@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Image View"
+        android:textSize="23dp"
+        android:background="#E8A5A5"
+        android:textStyle="bold"
+        android:paddingStart="130dp"
+        android:padding="6sp"
+        android:textColor="#01579B"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="690dp"
+        android:layout_marginTop="55dp"
+        android:background="#E8A5A5"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+    <Button
+        android:id="@+id/NextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_marginTop="686sp"
+        android:layout_marginHorizontal="120sp"
+        android:backgroundTint="#FB6C6C"
+        android:textColor="#01579B"
+        />
+</RelativeLayout>

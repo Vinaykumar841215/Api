@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Api List View Post"
+        android:layout_gravity="center"
+        android:textSize="22dp"
+        android:textStyle="bold"
+         android:textColor="#121010"
+        android:background="#FD8A8A"
+        android:paddingStart="110sp"
+        android:padding="6sp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="690dp"
+        android:layout_marginTop="1dp"
+        android:background="#FD8A8A"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_marginHorizontal="110dp"
+        android:layout_marginTop="-40dp"
+        android:backgroundTint="#01579B"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        />
+
+</LinearLayout>
